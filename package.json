@@ -1,0 +1,28 @@
+{
+  "name": "medservice-medical-and-health-website-contents",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/studylink.tech/medservice-medical-and-health-website-contents.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/studylink.tech/medservice-medical-and-health-website-contents/issues"
+  },
+  "homepage": "https://gitlab.com/studylink.tech/medservice-medical-and-health-website-contents#readme",
+  "dependencies": {
+    "loadash": "^1.0.0",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
