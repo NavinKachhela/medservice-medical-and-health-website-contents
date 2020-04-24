@@ -1,0 +1,14 @@
+/**
+* FILE ARCHITECTURE
+* IDENTIFY PATTERNS IN THE DESIGN
+* RULES YO BE FOLLOWED TO NAME THE CLASSES OF CSS
+* BEN
+* B - Block
+* E - Element
+* N - Modifier
+*/
+@import "normalize.css";
+@import "base/_variables";
+@import "base/_global";
+@import "modules/_large-hero";
+@import "modules/_btn";
