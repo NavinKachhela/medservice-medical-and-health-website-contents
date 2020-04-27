@@ -29,7 +29,12 @@
     </header>
 
     <div class="large-hero">
-        <img src="assets/images/hero.jpg">
+        <picture>
+            <source srcset="assets/images/hero.jpg 1920w,assets/images/hero-hi-dpi-i.jpg 3840w" media="(min-width:1200px)">
+            <source srcset="assets/images/hero-medium.jpg 1520w,assets/images/hero-hi-dpi-i.jpg 3040w" media="(min-width:768px)">
+
+            <img srcset="assets/images/hero-small.jpg 1300w,asset/images/hero-small-high-dpi-i.jpg 2600w" alt="">
+        </picture>
         <div class="large-hero__text-content">
             <h5 class="large-hero__text-content__strip-title">Our Clinic Provides</h5>
             <div class="large-hero__text-content__text">
@@ -39,7 +44,7 @@
                     <li class="large-hero__feature-list__item">Risus nec luctus mauris orci auctor purus euismod pretium purus pretium ligula rutrum tempor sapien and luctus</li>
                     <li class="large-hero__feature-list__item">Nemo ipsam egestas volute turpis dolores ut aliquam quaerat sodales sapien undo pretium purus feugiat dolor impedit</li>
                 </ul>
-                <p><a href="#" class="btn btn_blue">Discover More</a></p>
+                <a href="#" class="btn btn_blue">Discover More</a>
             </div>
         </div>
     </div>
