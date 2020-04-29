@@ -14,9 +14,18 @@
         padding: 0.75rem 1.5rem;
     }
 
-    &_blue {
+    &-white {
+        background-color: $white;
+        color: $mainBlue;
+    }
+
+    &-blue {
         color: #FFF;
         background-color: $mainBlue;
+
+        &:hover {
+            background: $btnHoverBlue;
+        }
 
     }
 

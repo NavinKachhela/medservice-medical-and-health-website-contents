@@ -1,0 +1,68 @@
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+
+    @mixin smallScreen {
+        max-width: 520px;
+    }
+
+    @mixin mediumScreen {
+        max-width: 700px;
+    }
+
+    @mixin largeScreen {
+        max-width: 920px;
+    }
+
+    @mixin extralargeScreen {
+        max-width: 1140px;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+
+    @mixin mediumScreen {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.align-self-start {
+    align-self: start;
+}
+
+.align-self-end {
+    align-self: end;
+}
+
+.align-self-stretch {
+    align-self: stretch;
+}
+
+.align-items-start {
+    align-items: start;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
