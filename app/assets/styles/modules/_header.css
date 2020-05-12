@@ -1,8 +1,147 @@
 .header {
     position: sticky;
     z-index: 999;
+    top: 0;
 
-    background-color: $white;
+    background: #fff;
     width: 100%;
     transition: all 450ms ease-in-out;
+    box-shadow: 0 0 2px rgba(50, 50, 50, 0.4);
+
+    &-logo-block {
+        text-align: center;
+
+        @mixin smallScreen {
+            text-align: left;
+        }
+
+    }
+
+    &-logo {
+        max-width: 180px;
+        height: auto;
+        margin: auto;
+
+    }
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item-link {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $grey;
+    transition: color .25s ease-in-out;
+
+    &:hover {
+        color: $mainBlue;
+    }
+
+    &.active {
+        color: $steelBlue;
+    }
+}
+
+
+.menu-content {
+    display: none;
+
+    @mixin largeScreen {
+        display: block;
+    }
+}
+
+.mobile-header-icon {
+    position: absolute;
+    cursor: pointer;
+    width: 20px;
+    height: 19px;
+    /* background-color: $grey; */
+    top: 30px;
+    right: 30px;
+
+    @mixin largeScreen {
+        display: none;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background-color: $mainBlue;
+        transform-origin: 0 0;
+        transition: transform .3s ease-out;
+    }
+
+    &-bar {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background-color: $mainBlue;
+        transform-origin: 0 50%;
+        transition: all .3s ease-out;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background-color: $mainBlue;
+        transform-origin: 0 100%;
+        transition: transform .3s ease-out;
+    }
+
+    &-close {
+        &::before {
+            transform: rotate(45deg) scaleX(1.25);
+        }
+
+        .mobile-header-icon-bar {
+            transform: scaleX(0);
+            opacity: 0;
+        }
+
+        &::after {
+            transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+        }
+    }
+}
+
+.mobile-menu {
+    opacity: 0;
+    display: none;
+
+    &-active {
+        opacity: 1;
+        display: block;
+    }
+
+    &-list {
+        list-style: none;
+
+        &-item {
+            border-top: solid 1px $lightGrey;
+        }
+    }
+
+    @mixin largeScreen {
+        display: none;
+    }
 }

@@ -35,6 +35,11 @@
     padding: 20px;
 }
 
+.column-big {
+    flex: 2;
+    padding: 20px;
+}
+
 .align-self-center {
     align-self: center;
 }

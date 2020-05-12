@@ -18,8 +18,12 @@
     },
     "homepage": "https://gitlab.com/studylink.tech/medservice-medical-and-health-website-contents#readme",
     "dependencies": {
+        "jquery": "^3.5.1",
+        "jquery-smooth-scroll": "^2.2.0",
+        "lazysizes": "^5.2.0",
         "loadash": "^1.0.0",
-        "normalize.css": "^8.0.1"
+        "normalize.css": "^8.0.1",
+        "waypoints": "^4.0.1"
     },
     "devDependencies": {
         "autoprefixer": "^9.7.6",
